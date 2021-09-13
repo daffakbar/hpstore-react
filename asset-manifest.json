@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/hpstore-react/static/css/main.e1d8605a.chunk.css",
-    "main.js": "/hpstore-react/static/js/main.28b554af.chunk.js",
-    "main.js.map": "/hpstore-react/static/js/main.28b554af.chunk.js.map",
+    "main.js": "/hpstore-react/static/js/main.ac482e41.chunk.js",
+    "main.js.map": "/hpstore-react/static/js/main.ac482e41.chunk.js.map",
     "runtime-main.js": "/hpstore-react/static/js/runtime-main.ccf98253.js",
     "runtime-main.js.map": "/hpstore-react/static/js/runtime-main.ccf98253.js.map",
     "static/css/2.9082872e.chunk.css": "/hpstore-react/static/css/2.9082872e.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.9082872e.chunk.css",
     "static/js/2.4a0a6657.chunk.js",
     "static/css/main.e1d8605a.chunk.css",
-    "static/js/main.28b554af.chunk.js"
+    "static/js/main.ac482e41.chunk.js"
   ]
 }
