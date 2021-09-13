@@ -31,7 +31,7 @@ class Details extends Component {
                   </p>
                   <p className=" text-muted lead">{info}</p>
                   <div className=" ">
-                    <Link to="/">
+                    <Link to="/hpstore-react">
                       <ButtonContainer className=" text-primary me-2">
                         Back to Product
                       </ButtonContainer>

@@ -8,7 +8,7 @@ export default function CartTotal({ value }) {
       <div className="container">
         <div className="row">
           <div className="mt-2 col-10 ms-sm-5 ms-md-auto col-sm-8 text-capitalize text-end">
-            <Link to="/">
+            <Link to="/hpstore-react">
               <button
                 className="px-5 mb-3 btn btn-outline-danger text-uppercase"
                 type="button"

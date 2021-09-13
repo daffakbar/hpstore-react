@@ -16,9 +16,9 @@ const App = () => {
     <React.Fragment>
       <Navbar />
       <Switch>
-        <Route exact path="/" component={ProductList} />
-        <Route path="/details" component={Details} />
-        <Route path="/cart" component={Cart} />
+        <Route exact path="/hpstore-react" component={ProductList} />
+        <Route path="/hpstore-react/details" component={Details} />
+        <Route path="/hpstore-react/cart" component={Cart} />
         <Route component={Default} />
       </Switch>
       <Modal />

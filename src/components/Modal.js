@@ -27,7 +27,7 @@ class Modal extends Component {
                       <img src={img} className="img-fluid" alt="product" />
                       <h5>{title}</h5>
                       <h5 className="text-muted">price: Rp. {price}</h5>
-                      <Link to="/" className="me-2">
+                      <Link to="/hpstore-react" className="me-2">
                         <ButtonContainer
                           className="text-primary"
                           onClick={() => closeModal()}
@@ -35,7 +35,7 @@ class Modal extends Component {
                           Continue Shopping
                         </ButtonContainer>
                       </Link>
-                      <Link to="/cart">
+                      <Link to="/hpstore-react/cart">
                         <ButtonContainer
                           className="text-primary"
                           cart

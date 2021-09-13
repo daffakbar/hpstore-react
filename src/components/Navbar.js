@@ -8,18 +8,18 @@ class Navbar extends Component {
   render() {
     return (
       <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
-        <Link to="/">
+        <Link to="/hpstore-react">
           <img src={logo} alt="" className="navbar-brand" />
         </Link>
         <ul className="navbar-nav align-items-center">
           <li className="ml-5 nav-item">
-            <Link to="/" className="nav-link">
+            <Link to="/hpstore-react" className="nav-link">
               Products
             </Link>
           </li>
         </ul>
 
-        <Link to="/cart" className="ms-auto">
+        <Link to="/hpstore-react/cart" className="ms-auto">
           <ButtonContainer>
             <span className="me-2">
               <i className="fas fa-cart-plus"> </i>

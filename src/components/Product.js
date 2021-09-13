@@ -16,7 +16,7 @@ class Product extends Component {
                 className="p-5 img-container"
                 onClick={() => value.handleDetail(id)}
               >
-                <Link to="/details">
+                <Link to="/hpstore-react/details">
                   <img src={img} alt="" className="card-img-top" />
                 </Link>
                 <button
