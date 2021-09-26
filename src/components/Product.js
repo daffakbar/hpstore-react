@@ -13,26 +13,42 @@ class Product extends Component {
           <ProductConsumer>
             {(value) => (
               <div
-                className="p-5 img-container"
+                className="p-3 img-container"
                 onClick={() => value.handleDetail(id)}
               >
-                <Link to="/hpstore-react/details">
-                  <img src={img} alt="" className="card-img-top" />
-                </Link>
-                <button
-                  className="cart-btn"
-                  disabled={inCart ? true : false}
-                  onClick={() => {
-                    value.addToCart(id);
-                    value.openModal(id);
-                  }}
-                >
-                  {inCart ? (
-                    <p className="mb-0 text-capitalize">{""} In cart</p>
-                  ) : (
-                    <i className="fas fa-cart-plus" />
-                  )}
-                </button>
+                {/* <Link to="/hpstore-react/details"> */}
+                <div className="">
+                  <img
+                    src={img}
+                    alt=""
+                    className="card-img-top"
+                    height="380px"
+                  />
+                </div>
+                {/* </Link> */}
+                <div className=" d-flex justify-content-between">
+                  <Link to="/hpstore-react/details" className="btn btn-primary">
+                    <button className="btn btn-primary me-2">Detail</button>
+                  </Link>
+                  <button
+                    className="btn btn-danger"
+                    disabled={inCart ? true : false}
+                    onClick={() => {
+                      value.addToCart(id);
+                      value.openModal(id);
+                    }}
+                  >
+                    {inCart ? (
+                      <p className="mb-0 text-capitalize">{""} In cart</p>
+                    ) : (
+                      <button className="btn btn-danger ">Add </button>
+                    )}
+                  </button>
+                </div>
+                {/* <div className=" card-footer d-flex justify-content-between">
+                  <button className="btn btn-primary">Detail</button>
+                  <button className="btn btn-danger">Add </button>
+                </div> */}
               </div>
             )}
           </ProductConsumer>
@@ -87,7 +103,7 @@ const ProductWrapper = styled.div`
     transition: all 1s linear;
   }
   .img-container:hover .card-img-top {
-    transform: scale(1.2);
+    transform: scale(1.06);
   }
   .cart-btn {
     position: absolute;
@@ -100,7 +116,7 @@ const ProductWrapper = styled.div`
     font-size: 1.4rem;
     border-radius: 0.5rem 0 0 0;
     transition: all 1s linear;
-    transform: translate(100%, 100%);
+    transform: translate(50%, 50%);
   }
   .img-container:hover .cart-btn {
     transform: translate(0, 0);

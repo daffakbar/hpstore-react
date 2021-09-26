@@ -21,28 +21,28 @@ class Modal extends Component {
                   <div className="row">
                     <div
                       id="modal"
-                      className="col-8 mx-auto col-md-6 py-2 col-lg-4 text-center text-capitalize"
+                      className=" col-8 mx-auto col-md-6 py-2 col-lg-4 text-center text-capitalize"
                     >
                       <h5>Item added to the Cart</h5>
                       <img src={img} className="img-fluid" alt="product" />
                       <h5>{title}</h5>
                       <h5 className="text-muted">price: Rp. {price}</h5>
                       <Link to="/hpstore-react" className="me-2">
-                        <ButtonContainer
-                          className="text-primary"
+                        <button
+                          className="btn btn-primary"
                           onClick={() => closeModal()}
                         >
                           Continue Shopping
-                        </ButtonContainer>
+                        </button>
                       </Link>
                       <Link to="/hpstore-react/cart">
-                        <ButtonContainer
-                          className="text-primary"
+                        <button
+                          className="btn btn-danger"
                           cart
                           onClick={() => closeModal()}
                         >
-                          go to cart
-                        </ButtonContainer>
+                          Go To Cart
+                        </button>
                       </Link>
                     </div>
                   </div>

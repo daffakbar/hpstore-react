@@ -6,12 +6,12 @@
   --mainYellow: #ffa400;
 }
 body {
-  font-family: "Oswald", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
   background: var(--mainWhite) !important;
   color: var(--mainDark);
 }
 .text-title {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Roboto Condensed", cursive;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
 }

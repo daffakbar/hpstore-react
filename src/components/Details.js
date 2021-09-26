@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { ProductConsumer } from "../Context";
 import { Link } from "react-router-dom";
-import { ButtonContainer } from "./styles/Button";
+// import { ButtonContainer } from "./styles/Button";
 
 class Details extends Component {
   render() {
@@ -17,7 +17,7 @@ class Details extends Component {
                   <img src={img} alt="products" className="img-fluid" />
                 </div>
                 <div className="col-10 mx-auto text-capitalize text-center text-slanted text-blue my-5">
-                  <h1>Model: {title}</h1>
+                  <h1 className="text-uppercase">{title}</h1>
                   <h4 className="text-title text-uppercase text-muted mt-3 mb-2">
                     Made by: <span className="text-uppercase">{company}</span>
                   </h4>
@@ -27,26 +27,26 @@ class Details extends Component {
                     </b>
                   </h4>
                   <p className="text-capitalize fw-bold mt-3 mb-0">
-                    some info about product:
+                    Description:
                   </p>
                   <p className=" text-muted lead">{info}</p>
                   <div className=" ">
                     <Link to="/hpstore-react">
-                      <ButtonContainer className=" text-primary me-2">
+                      <button className=" me-2 btn btn-primary">
                         Back to Product
-                      </ButtonContainer>
+                      </button>
                     </Link>
-                    <ButtonContainer
+                    <button
                       cart
                       disabled={inCart ? true : false}
-                      className="text-primary"
+                      className="btn btn-danger"
                       onClick={() => {
                         value.addToCart(id);
                         value.openModal(id);
                       }}
                     >
                       {inCart ? "In Cart" : "Add To Cart"}
-                    </ButtonContainer>
+                    </button>
                   </div>
                 </div>
               </div>
